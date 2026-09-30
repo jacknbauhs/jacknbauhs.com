@@ -1,0 +1,126 @@
+{
+  "note": "Film & Directing. Each project is one page at /film/<slug>/. Videos are Vimeo ids with their h= hash (needed for unlisted videos). poster is a filename under assets/img/; source_url is where it came from (fetched once by the workflow).",
+  "reel": {
+    "title": "VFX reel",
+    "caption": "Third Beacon VFX reel, led by Kyle Delso and Brandon Gorde. Jack cut for the studio.",
+    "vimeo": "215258424", "hash": "19038c250f",
+    "poster": "reel.jpg",
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589849181463-ZDTWWJ8IAU6TBR3JPI2F/20140301_Trade-151_0124-copy.jpg"
+  },
+  "projects": [
+    {
+      "slug": "polo-g-tour-recap",
+      "title": "Polo G",
+      "subtitle": "Tour recap",
+      "kind": "Commercial",
+      "year": "2020",
+      "line": "Polo G in San Diego, and the NBA All-Star Weekend recap in Atlanta with Pooh Shiesty, Moneybagg Yo, Big 30 and Money Man.",
+      "poster": "polo-g.jpg",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/61b9098f1f8c50309c416ee0/1639518283011-V2CFWFD6TD7PZPGRIJAH/polo-g-phil-knott.jfif",
+      "videos": [
+        {"title": "Polo G, 2020 concert in San Diego", "vimeo": "582809075", "hash": "247547c163",
+         "credits": [["Producer", "Midwest Takeover"], ["Director", "RZVD"], ["Camera operator", "Abraham Mohammad"], ["Editor", "Jack Bauhs"]]},
+        {"title": "NBA All-Star Weekend recap, Atlanta", "vimeo": "554943883", "hash": "422de6c09a",
+         "credits": [["Producer", "Midwest Takeover"], ["Director", "RZVD"], ["Camera operator", "Abraham Mohammad"], ["Editor", "Jack Bauhs"]]}
+      ]
+    },
+    {
+      "slug": "nepal-beyond",
+      "title": "Nepal Beyond",
+      "subtitle": "Documentary",
+      "kind": "Documentary",
+      "year": "2020",
+      "line": "After the 2015 earthquake, Nepal struggles to recover as millions of dollars of aid vanishes. Executive produced by Jeremy Irons, narrated by Peter Coyote.",
+      "poster": "nepal-beyond.jpg",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/61b9098f1f8c50309c416ee0/2b3569af-ea0b-448d-b58e-946d25a40acc/Cut_v.3.1_12.4.00_11_38_09.Still030.jpg",
+      "videos": [
+        {"title": "Nepal Beyond", "vimeo": "456280295", "hash": "6aa4b4e4c4",
+         "credits": [["Executive producer", "Jeremy Irons"], ["Director", "Quinn Halleck"], ["Narration", "Peter Coyote"], ["Editor", "Jack Bauhs"], ["Produced by", "Kadyn Schumann"], ["Sound design", "Roman Richard"], ["Color", "Hayley Stablow"], ["Nepali translations", "Maddy Gadal"], ["Assistant camera", "Sol Follgetti"], ["Publicity", "Karoline Ribak"], ["Location support", "Deepak Chapagain, Rajan Tapa"], ["Clean-up artist", "Nick Reynolds"], ["Graphics", "Ryan Trefes"], ["A film by", "Community Disaster & Response Team, International Lions Club of Nepal"], ["Appearances", "Sapana Basnet, Dikendra Maskey, Umesh Dakal, Sudarshan Dhar Pradananga, Ramesh Kumar Shrestha, Manohari Thapa"]]}
+      ]
+    },
+    {
+      "slug": "porker",
+      "title": "Porker",
+      "subtitle": "Narrative film",
+      "kind": "Narrative",
+      "year": "2021",
+      "line": "An LA 48-Hour Film Contest entry. Bradley's routine evening is disturbed by an oddly familiar stranger with sinister news about his pet pig, Kip.",
+      "poster": "porker.jpg",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/61b9098f1f8c50309c416ee0/464f7501-b52e-43a7-abc9-cbc499536224/Cine_Still_%C3%B810.jpg",
+      "videos": [
+        {"title": "Porker", "vimeo": "591743427", "hash": "d8f159e6b6",
+         "credits": [["Bradley", "Maguire Kane"], ["Kip", "Ali Gudiev"], ["Directed by", "Alan Moutal"], ["Produced by", "Jimmy Kane, Jack Bauhs"], ["Edited by", "Jack Bauhs"], ["Written by", "Kyle Blaich"], ["Director of photography", "Justin McWilliams"], ["Gaffer", "Clay Connell"], ["Production designer", "Chloe May"], ["Sound mixer", "Sam Gershik"], ["Sound designer", "Jack Bauhs"]]}
+      ]
+    },
+    {
+      "slug": "parallax",
+      "title": "PARALLAX",
+      "subtitle": "VR documentary",
+      "kind": "VR documentary",
+      "year": "2018",
+      "line": "A virtual reality experience through our universe and where we came from. Dodge College, Chapman University.",
+      "poster": "parallax.jpg",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/61b9098f1f8c50309c416ee0/1639525103928-28Z3NUG9WB8KP5ZONPXN/GS_20130225_FullMoon_3290_Pan900-2.png",
+      "videos": [
+        {"title": "PARALLAX", "vimeo": "269058955", "hash": "f7b81d0ef3",
+         "credits": [["Directed by", "Jack Bauhs, Shiv Rajagopal, Jack Seligmann, Breanna Greenup"], ["Edited by", "Jack Bauhs"], ["Faculty advisors", "Sally Rubin, Andre Dhont"], ["With", "Dhont Documentary Foundation, Community Voices, Dodge College of Media & Arts"]]}
+      ]
+    },
+    {
+      "slug": "adrenaline-worldwide",
+      "title": "Adrenaline Worldwide",
+      "subtitle": "Commercial series",
+      "kind": "Commercial series",
+      "year": "2017 to 2018",
+      "line": "Athlete promos, the ESPN announcement, Camp Adrenaline, the Night Show and the Battles, for the international breaking competition.",
+      "poster": "adrenaline.jpg",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/61b9098f1f8c50309c416ee0/1639519923158-M9NB62PHCA94H2J6D3CT/unnamed.jpg",
+      "videos": [
+        {"title": "Jackson Lewis, athlete promotional video (2017)", "vimeo": "334555104", "hash": "315f0f6c8f",
+         "credits": [["Directed by", "Matt Morello"], ["Produced by", "Jimmy Kane"], ["Director of photography", "Corentin Leroux"], ["Edited by", "Matt Morello"], ["Gaffer", "Jack Bauhs"]]},
+        {"title": "Adrenaline joins ESPN (2018)", "vimeo": "334555015", "hash": "77220ee27e",
+         "credits": [["Produced by", "Jimmy Kane"], ["Edited by", "Jack Bauhs"]]},
+        {"title": "Camp Adrenaline (2018)", "vimeo": "334259039", "hash": "10ddf68bf7",
+         "credits": [["Directed by", "Jack Bauhs"], ["Produced by", "Jimmy Kane"], ["Edited by", "Jack Bauhs, Matt Morello"], ["Director of photography", "Jack Bauhs"]]},
+        {"title": "Adrenaline Night Show (2018)", "vimeo": "334258128", "hash": "3fcf905edd",
+         "credits": [["Directed by", "Jack Bauhs"], ["Produced by", "Jimmy Kane"], ["Edited by", "Jack Bauhs, Matt Morello"], ["Director of photography", "Jack Bauhs"]]},
+        {"title": "Adrenaline Battles: Woojin Choi vs. Ryan Posi (2018)", "vimeo": "334557108", "hash": "1414db0de1",
+         "credits": [["Series", "Adrenaline Worldwide"]]}
+      ]
+    },
+    {
+      "slug": "project-solitude",
+      "title": "Project Solitude",
+      "subtitle": "Documentary",
+      "kind": "Documentary",
+      "year": "2017",
+      "line": "A young family living in a customized camper van, and several weeks of living that life alongside them to find out why people go off the grid.",
+      "poster": "project-solitude.jpg",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/61b9098f1f8c50309c416ee0/1639525981380-OG9JPOCOJIZMMHO4FD5G/Untitled-1.png",
+      "videos": [
+        {"title": "Project Solitude", "vimeo": "293473867", "hash": "faa2da5b72",
+         "credits": [["Directed by", "Jack Bauhs"], ["Produced by", "Shiv Rajagopal"], ["Edited by", "Jack Bauhs, Justin McWilliams"], ["Director of photography", "Justin McWilliams"]]}
+      ]
+    },
+    {
+      "slug": "silver-lakes-sports",
+      "title": "Silver Lakes Sports",
+      "subtitle": "Commercial series",
+      "kind": "Commercial series",
+      "year": "2017",
+      "line": "Four promos for the Silver Lakes Sports Complex: the Cerritos Memorial Challenge Cup, Seattle Reign v UCLA, a Canaan Smith concert and the Cal South College Showcase.",
+      "poster": "silver-lakes.jpg",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/61b9098f1f8c50309c416ee0/1639518731927-T6XEJM47Q1754SFUZJ2W/38007988_667515596942013_1149892753799249920_n.jpg",
+      "videos": [
+        {"title": "Cerritos Memorial Challenge Cup", "vimeo": "334560097", "hash": "96a4f7ffba",
+         "credits": [["Directed by", "Jack Bauhs"], ["Produced by", "Brooks Bash"], ["Edited by", "Jack Bauhs"], ["Camera operators", "Jack Bauhs, Tim Wolf"]]},
+        {"title": "Seattle Reign v UCLA Women's Soccer", "vimeo": "334560375", "hash": "bdbb6591db",
+         "credits": [["Directed by", "Jack Bauhs"], ["Produced by", "Brooks Bash"], ["Edited by", "Jack Bauhs"], ["Camera operators", "Jack Bauhs, Tim Wolf"]]},
+        {"title": "Canaan Smith concert", "vimeo": "334560019", "hash": "e19f7fe3e5",
+         "credits": [["Directed by", "Jack Bauhs"], ["Produced by", "Brooks Bash"], ["Edited by", "Jack Bauhs"], ["Camera operators", "Jack Bauhs, Tim Wolf"]]},
+        {"title": "Cal South College Showcase", "vimeo": "334559728", "hash": "3a2d576d2e",
+         "credits": [["Directed by", "Jack Bauhs"], ["Produced by", "Brooks Bash"], ["Edited by", "Jack Bauhs"], ["Camera operators", "Jack Bauhs, Tim Wolf"]]}
+      ]
+    }
+  ]
+}

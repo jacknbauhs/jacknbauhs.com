@@ -1,0 +1,21 @@
+{
+  "email": "jack@jacknbauhs.com",
+  "formspree_id": "",
+  "channels": [
+    {"name": "YouTube", "handle": "Astronaut Time", "url": "", "note": "Jack: paste the channel URL"},
+    {"name": "TikTok", "handle": "@astronauttime", "url": "https://www.tiktok.com/@astronauttime"},
+    {"name": "Instagram", "handle": "@astronaut_time_TCG", "url": "https://www.instagram.com/astronaut_time_tcg/"},
+    {"name": "Facebook", "handle": "@astronaut_time_TCG", "url": "https://www.facebook.com/astronaut_time_TCG"},
+    {"name": "Whatnot", "handle": "Astronaut Time", "url": "https://www.whatnot.com/s/NP78DwK8"}
+  ],
+  "buy": [
+    {"name": "Whatnot", "url": "https://www.whatnot.com/s/NP78DwK8"},
+    {"name": "eBay", "url": "https://www.ebay.com/usr/astronaut_time"}
+  ],
+  "personal": [
+    {"name": "Instagram", "url": "https://www.instagram.com/jacknbauhs/"},
+    {"name": "X", "url": "https://twitter.com/jacknbauhs"},
+    {"name": "Facebook", "url": "https://www.facebook.com/jackbauhs"},
+    {"name": "Vimeo", "url": "https://vimeo.com/jacknbauhs"}
+  ]
+}

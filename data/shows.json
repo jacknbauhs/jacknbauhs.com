@@ -1,0 +1,27 @@
+{
+  "flagship": {
+    "name": "Open or Sealed",
+    "question": "Should you open it, or keep it sealed?",
+    "lines": [
+      "Pull rates and singles prices give the expected value of what's inside.",
+      "The sealed price is the clean one: flagged sales are taken out first.",
+      "Two odds from the Monte Carlo: a hit worth $50 or more, and one worth $200 or more.",
+      "The verdict is about a box you already hold. It is never a reason to buy one."
+    ],
+    "cadence": "Tuesdays",
+    "check": "Every verdict is dated and checked 30 days later, in public."
+  },
+  "shows": [
+    {"key": "open-or-sealed", "name": "Open or Sealed", "cadence": "Tuesday", "line": "One product, the math rendered, a dated verdict: OPEN, KEEP or DEPENDS.", "where": "YouTube, TikTok, the board"},
+    {"key": "market-radar", "name": "Market Radar", "cadence": "Thursday", "line": "What's moving, with the fake sales taken out. Movers, flags and the week's file.", "where": "YouTube, Instagram, X"},
+    {"key": "sell-side", "name": "The Sell Side", "cadence": "Saturday", "line": "Shows, shipping, what sold and for what, what didn't.", "where": "TikTok, Instagram"},
+    {"key": "live", "name": "Open or Sealed Live", "cadence": "Monthly", "line": "Chat votes, the math on screen, then the box opens. From the rip list only.", "where": "Whatnot, TikTok Live"},
+    {"key": "the-file", "name": "The File", "cadence": "Monthly", "line": "One card or product as an artifact: every sale it ever had, the story around it, rendered.", "where": "YouTube"}
+  ],
+  "partners": {
+    "lead": "Two units, free, with a link back: the weekly Open or Sealed verdict card and the Flag Report card, as images at stable URLs, plus the JSON behind them for anyone who wants to render it themselves.",
+    "image_pattern": "https://board.jacknbauhs.com/share/out/<name>.png",
+    "json_pattern": "https://board.jacknbauhs.com/data/<file>.json",
+    "note": "Verdicts are dated and checked 30 days later in public. Flags name the reason a sale was kept out of the math. Nothing recommends a purchase."
+  }
+}

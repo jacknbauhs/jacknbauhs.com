@@ -1,0 +1,17 @@
+{
+  "note": "Images the site uses, and where each came from. tools/fetch_images.py downloads any that aren't in assets/img yet (the workflow runs it on every build and commits what it fetched). Once a file is in assets/img, its source_url no longer matters.",
+  "files": {
+    "about.jpg": "https://images.squarespace-cdn.com/content/v1/61b9098f1f8c50309c416ee0/52dd9d0e-ee15-4411-b448-e245ee1c5258/FB+Profile+Pic.jpg?format=1500w",
+    "reel.jpg": "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589849181463-ZDTWWJ8IAU6TBR3JPI2F/20140301_Trade-151_0124-copy.jpg?format=1500w",
+    "polo-g.jpg": "https://images.squarespace-cdn.com/content/v1/61b9098f1f8c50309c416ee0/1639518283011-V2CFWFD6TD7PZPGRIJAH/polo-g-phil-knott.jfif?format=1500w",
+    "nepal-beyond.jpg": "https://images.squarespace-cdn.com/content/v1/61b9098f1f8c50309c416ee0/2b3569af-ea0b-448d-b58e-946d25a40acc/Cut_v.3.1_12.4.00_11_38_09.Still030.jpg?format=1500w",
+    "porker.jpg": "https://images.squarespace-cdn.com/content/v1/61b9098f1f8c50309c416ee0/464f7501-b52e-43a7-abc9-cbc499536224/Cine_Still_%C3%B810.jpg?format=1500w",
+    "parallax.jpg": "https://images.squarespace-cdn.com/content/v1/61b9098f1f8c50309c416ee0/1639525103928-28Z3NUG9WB8KP5ZONPXN/GS_20130225_FullMoon_3290_Pan900-2.png?format=1500w",
+    "adrenaline.jpg": "https://images.squarespace-cdn.com/content/v1/61b9098f1f8c50309c416ee0/1639519923158-M9NB62PHCA94H2J6D3CT/unnamed.jpg?format=1500w",
+    "project-solitude.jpg": "https://images.squarespace-cdn.com/content/v1/61b9098f1f8c50309c416ee0/1639525981380-OG9JPOCOJIZMMHO4FD5G/Untitled-1.png?format=1500w",
+    "silver-lakes.jpg": "https://images.squarespace-cdn.com/content/v1/61b9098f1f8c50309c416ee0/1639518731927-T6XEJM47Q1754SFUZJ2W/38007988_667515596942013_1149892753799249920_n.jpg?format=1500w",
+    "contact-1.jpg": "https://images.squarespace-cdn.com/content/v1/61b9098f1f8c50309c416ee0/90cebe0c-8d71-453a-9690-9f9364298618/Cut_v.3.1_12.4.00_06_19_09.Still014.jpg?format=1500w",
+    "contact-2.jpg": "https://images.squarespace-cdn.com/content/v1/61b9098f1f8c50309c416ee0/397b42c0-7b7d-47fd-92ca-eb517794ea95/Cut_v.3.1_12.4.00_00_51_22.Still001.jpg?format=1500w",
+    "contact-3.jpg": "https://images.squarespace-cdn.com/content/v1/61b9098f1f8c50309c416ee0/4a2f29f5-d714-4ae3-bc82-1b07b352eea8/Cut_v.3.1_12.4.00_01_43_05.Still002.jpg?format=1500w"
+  }
+}

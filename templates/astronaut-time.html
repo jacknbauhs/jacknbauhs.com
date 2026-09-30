@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block main %}
+<section class="page-hero" aria-labelledby="h">
+  <div class="wrap">
+    <p class="kicker">The media brand</p>
+    <h1 id="h">Astronaut Time</h1>
+    <p class="lede">Pokémon market media: rendered, edited, built on real data. The shows run Tuesday, Thursday and Saturday. Every number they cite comes from <a href="{{ site.board }}">Mission Control</a>, every call is dated, and the fake sales are taken out before the math.</p>
+  </div>
+</section>
+
+<section class="section" id="open-or-sealed" aria-labelledby="oos-h">
+  <div class="wrap">
+    <div class="section-head"><div><p class="kicker">The flagship · {{ shows.flagship.cadence }}</p><h2 id="oos-h">{{ shows.flagship.name }}</h2></div></div>
+    <div class="two-col">
+      <div>
+        <h3 class="question">{{ shows.flagship.question }}</h3>
+        <ol class="how">
+          {% for l in shows.flagship.lines %}<li>{{ l }}</li>{% endfor %}
+        </ol>
+        <p class="note mono">{{ shows.flagship.check }}</p>
+      </div>
+      <div class="verdict-slot" data-verdicts data-verdicts-empty="Open or Sealed starts with the first verdict. Each one is dated, shows its math, and gets checked 30 days later."></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="shows" aria-labelledby="shows-h">
+  <div class="wrap">
+    <div class="section-head"><div><p class="kicker">The schedule</p><h2 id="shows-h">The shows</h2></div></div>
+    <div class="cards">
+      {% for s in shows.shows %}
+      <article class="card">
+        <p class="kicker">{{ s.cadence }}</p>
+        <h3>{{ s.name }}</h3>
+        <p class="line">{{ s.line }}</p>
+        <p class="mono src">{{ s.where }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="numbers" aria-labelledby="numbers-h">
+  <div class="wrap">
+    <div class="section-head">
+      <div><p class="kicker">Mission Control today</p><h2 id="numbers-h">By the numbers</h2></div>
+      <a class="more" href="{{ site.board }}">Open the board <span aria-hidden="true">→</span></a>
+    </div>
+    {% include "_tiles.html" %}
+    <p class="note mono" data-board-updated>{{ site.board_refresh_note }}</p>
+  </div>
+</section>
+
+<section class="section videos" data-videos-section aria-labelledby="videos-h" hidden>
+  <div class="wrap">
+    <div class="section-head"><div><p class="kicker">Latest</p><h2 id="videos-h">From the channels</h2></div></div>
+    <div class="posters" data-videos></div>
+  </div>
+</section>
+
+<section class="section" id="channels" aria-labelledby="channels-h">
+  <div class="wrap">
+    <div class="section-head"><div><p class="kicker">Where it lives</p><h2 id="channels-h">Channels</h2></div></div>
+    <div class="button-row">
+      {% for c in links.channels if c.url %}<a class="btn btn-ghost" href="{{ c.url }}">{{ c.name }} <span class="mono muted">{{ c.handle }}</span></a>{% endfor %}
+    </div>
+    <p class="note" id="buy"><span class="kicker">Where to buy</span> Cards and sealed product from the collection sell on {% for b in links.buy %}<a href="{{ b.url }}">{{ b.name }}</a>{% if not loop.last %} and {% endif %}{% endfor %}. Nothing on this site is a recommendation to buy.</p>
+  </div>
+</section>
+
+<section class="section" id="partners" aria-labelledby="partners-h">
+  <div class="wrap narrow">
+    <div class="section-head"><div><p class="kicker">For partners and press</p><h2 id="partners-h">Syndicate the verdicts</h2></div></div>
+    <p class="body">{{ shows.partners.lead }}</p>
+    <p class="mono src">Images: <code>{{ shows.partners.image_pattern }}</code><br>Data: <code>{{ shows.partners.json_pattern }}</code></p>
+    <p class="body">{{ shows.partners.note }} Write to <a href="mailto:{{ links.email }}">{{ links.email }}</a>.</p>
+  </div>
+</section>
+{% endblock %}

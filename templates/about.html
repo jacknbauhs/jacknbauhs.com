@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block main %}
+<section class="page-hero" aria-labelledby="h">
+  <div class="wrap">
+    <p class="kicker">About</p>
+    <h1 id="h">Director. Sales strategist. Founder of Astronaut Time.</h1>
+  </div>
+</section>
+<section class="section" aria-label="Biography">
+  <div class="wrap two-col about">
+    <div class="prose">{{ about_html|safe }}</div>
+    <aside>
+      <div class="portrait-frame">{% if img.about %}<img src="{{ base }}/assets/img/about.jpg" alt="Jack Bauhs" loading="lazy">{% else %}<div class="poster-placeholder"></div>{% endif %}</div>
+      <p class="mono src">Chicago · Chapman University, Dodge College of Film and Media Arts</p>
+      <div class="button-row">
+        <a class="btn btn-ghost" href="{{ base }}/film/">The film work</a>
+        <a class="btn btn-ghost" href="{{ base }}/contact/">Get in touch</a>
+      </div>
+    </aside>
+  </div>
+</section>
+{% endblock %}

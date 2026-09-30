@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block main %}
+<section class="hero" aria-labelledby="hero-h">
+  <canvas class="constellation" data-constellation aria-hidden="true"></canvas>
+  <div class="wrap hero-inner">
+    <p class="kicker">Jack Bauhs · Astronaut Time · Mission Control</p>
+    <h1 id="hero-h">The collectibles market,<br>live.</h1>
+    <p class="lede">Sales checked one by one, dated calls, release dates. Pokémon market media, rendered and edited, built on real data. Every number carries its source and its date.</p>
+    <div class="actions">
+      <a class="btn" href="{{ site.board }}">Open the board</a>
+      <a class="btn btn-ghost" href="{{ base }}/astronaut-time/">Astronaut Time</a>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" data-ticker aria-label="Market strip">
+  <div class="ticker-track"><span class="ticker-item muted">Loading the board…</span></div>
+</div>
+
+<section class="section" id="moving" aria-labelledby="moving-h">
+  <div class="wrap">
+    <div class="section-head">
+      <div><p class="kicker">Mission Control today</p><h2 id="moving-h">What's moving</h2></div>
+      <a class="more" href="{{ site.board }}">Open the board <span aria-hidden="true">→</span></a>
+    </div>
+    {% include "_tiles.html" %}
+    <p class="note mono" data-board-updated>{{ site.board_refresh_note }}</p>
+  </div>
+</section>
+
+<section class="section" id="astronaut-time" aria-labelledby="at-h">
+  <div class="wrap">
+    <div class="section-head">
+      <div><p class="kicker">The media brand</p><h2 id="at-h">Astronaut Time</h2></div>
+      <a class="more" href="{{ base }}/astronaut-time/">The shows and the schedule <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="flagship">
+      <div class="flagship-copy">
+        <p class="kicker">The flagship · {{ shows.flagship.cadence }}</p>
+        <h3>{{ shows.flagship.name }}: {{ shows.flagship.question }}</h3>
+        <p class="body">The answer is math plus taste, and Mission Control does the math: pull rates and singles prices against the clean sealed price, two hit probabilities, a dated verdict checked 30 days later in public.</p>
+        <div class="verdict-slot" data-verdicts data-verdicts-empty="The first verdict goes up the day it publishes, with its math, and gets checked 30 days later."></div>
+      </div>
+      <ul class="shows-list">
+        {% for s in shows.shows %}<li><span class="mono cadence">{{ s.cadence }}</span><span class="name">{{ s.name }}</span><span class="line">{{ s.line }}</span></li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section videos" data-videos-section aria-labelledby="videos-h" hidden>
+  <div class="wrap">
+    <div class="section-head"><div><p class="kicker">Latest</p><h2 id="videos-h">From Astronaut Time</h2></div></div>
+    <div class="posters" data-videos></div>
+  </div>
+</section>
+
+<section class="section lanes" aria-labelledby="lanes-h">
+  <div class="wrap">
+    <h2 id="lanes-h" class="visually-hidden">More from Jack</h2>
+    <div class="lane-grid">
+      <a class="lane" href="{{ base }}/film/">
+        <div class="poster-frame">{% if img.polo %}<img src="{{ base }}/assets/img/polo-g.jpg" alt="" loading="lazy">{% else %}<div class="poster-placeholder"></div>{% endif %}</div>
+        <p class="kicker">Film & Directing</p>
+        <h3>Seven projects, twenty-one films.</h3>
+        <p class="line">Documentaries, narrative, commercial series, VR. Executive producers include Jeremy Irons.</p>
+      </a>
+      <a class="lane" href="{{ base }}/sales/">
+        <div class="poster-frame"><div class="poster-placeholder data"></div></div>
+        <p class="kicker">Sales & Strategy</p>
+        <h3>Enterprise sales at Docusign. Market data by night.</h3>
+        <p class="line">The Sale Integrity Layer, the dated calls, and how a market engine gets built on the side.</p>
+      </a>
+      <a class="lane" href="{{ base }}/about/">
+        <div class="poster-frame">{% if img.about %}<img src="{{ base }}/assets/img/about.jpg" alt="" loading="lazy">{% else %}<div class="poster-placeholder"></div>{% endif %}</div>
+        <p class="kicker">About</p>
+        <h3>Director. Sales strategist. Founder.</h3>
+        <p class="line">Chicago-born, Chapman-trained, building at the intersection of storytelling, commerce and culture.</p>
+      </a>
+    </div>
+  </div>
+</section>
+{% endblock %}

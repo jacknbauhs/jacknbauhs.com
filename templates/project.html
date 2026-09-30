@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block main %}
+<section class="page-hero" aria-labelledby="h">
+  <div class="wrap">
+    <p class="kicker"><a href="{{ base }}/film/">Film & Directing</a> · {{ p.kind }} · {{ p.year }}</p>
+    <h1 id="h">{{ p.title }}{% if p.subtitle %} <span class="sub">// {{ p.subtitle }}</span>{% endif %}</h1>
+    <p class="lede">{{ p.line }}</p>
+  </div>
+</section>
+
+<section class="section" aria-label="Films">
+  <div class="wrap">
+    {% for v in p.videos %}
+    <article class="film-entry">
+      <div class="video-frame"><iframe src="https://player.vimeo.com/video/{{ v.vimeo }}?h={{ v.hash }}&title=0&byline=0&portrait=0&dnt=1" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="{{ v.title }}"></iframe></div>
+      <h2>{{ v.title }}</h2>
+      <dl class="credits">
+        {% for role, name in v.credits %}<div><dt>{{ role }}</dt><dd>{{ name }}</dd></div>{% endfor %}
+      </dl>
+    </article>
+    {% endfor %}
+    <nav class="prev-next" aria-label="More projects">
+      {% if prev %}<a href="{{ base }}/film/{{ prev.slug }}/"><span class="kicker">Previous</span>{{ prev.title }}</a>{% else %}<span></span>{% endif %}
+      {% if next %}<a class="right" href="{{ base }}/film/{{ next.slug }}/"><span class="kicker">Next</span>{{ next.title }}</a>{% endif %}
+    </nav>
+  </div>
+</section>
+{% endblock %}

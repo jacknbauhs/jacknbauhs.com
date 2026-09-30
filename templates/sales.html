@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block main %}
+<section class="page-hero" aria-labelledby="h">
+  <div class="wrap">
+    <p class="kicker">Sales & Strategy</p>
+    <h1 id="h">Enterprise sales by day. Market data by night.</h1>
+    <p class="lede">Jack Bauhs works in enterprise technology sales at Docusign, helping organizations streamline agreements, automate workflows, and scale operations through secure digital solutions. His work blends business strategy, communication, and problem solving to drive real operational impact.</p>
+  </div>
+</section>
+
+<section class="section" id="data" aria-labelledby="data-h">
+  <div class="wrap">
+    <div class="section-head">
+      <div><p class="kicker">The data work</p><h2 id="data-h">Mission Control</h2></div>
+      <a class="more" href="{{ site.board }}">Open the board <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="two-col">
+      <div>
+        <p class="body">Mission Control is the market engine behind Astronaut Time: a Python service that collects card-market data every night, checks every sold record before it counts, and publishes what survives to a public board. It was built on the side, one job at a time, and it runs itself.</p>
+        <p class="body">The part that matters is the <strong>Sale Integrity Layer</strong>. A plain average of eBay sales is wrong more often than people think: relisted slabs, double-counted auctions, a $46 "PSA 9" that wasn't the card. Every record gets a label (clean, relist, duplicate, doesn't belong, suspect pump, suspect wash) and only the clean ones make the median. On the first hand-checked file, 7 of 39 sold records were kept out of the math.</p>
+        <p class="body">Calls go on the record the day they go public, with a start price, a rule, and a check date. Misses stay up.</p>
+      </div>
+      <div>
+        {% include "_tiles.html" %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

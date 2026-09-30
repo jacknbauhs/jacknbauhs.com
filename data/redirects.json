@@ -1,0 +1,20 @@
+{
+  "note": "Old Squarespace paths to new pages. The build writes a tiny redirect page at each old path so bookmarks and search results keep working.",
+  "map": {
+    "/astronauttime": "/astronaut-time/",
+    "/shop": "/astronaut-time/#buy",
+    "/live-streams": "/astronaut-time/#shows",
+    "/collection": "/astronaut-time/",
+    "/content": "/astronaut-time/",
+    "/film-reel": "/film/#reel",
+    "/filmanddirecting": "/film/",
+    "/filmanddirecting/project-three-hpfmg": "/film/polo-g-tour-recap/",
+    "/filmanddirecting/project-one-pmssd": "/film/nepal-beyond/",
+    "/filmanddirecting/project-two-lbmxj": "/film/porker/",
+    "/filmanddirecting/project-six-ae58s": "/film/parallax/",
+    "/filmanddirecting/project-five-kz2py": "/film/adrenaline-worldwide/",
+    "/filmanddirecting/project-solitude": "/film/project-solitude/",
+    "/filmanddirecting/project-four-fx7hl": "/film/silver-lakes-sports/",
+    "/salesandstrategy": "/sales/"
+  }
+}

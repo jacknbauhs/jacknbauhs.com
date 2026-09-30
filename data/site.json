@@ -1,0 +1,19 @@
+{
+  "name": "Jack Bauhs",
+  "wordmark": "JACK BAUHS",
+  "domain": "www.jacknbauhs.com",
+  "url": "https://www.jacknbauhs.com",
+  "title": "Jack Bauhs | Founder of Astronaut Time",
+  "description": "Director, sales strategist, and founder of Astronaut Time: Pokémon market media built on Mission Control's data. The collectibles market, live.",
+  "board": "https://board.jacknbauhs.com",
+  "board_refresh_note": "Mission Control publishes to the board every morning at 8:15 AM Central. Every number carries its source and its date.",
+  "nav": [
+    {"label": "Astronaut Time", "href": "/astronaut-time/", "key": "astronaut-time"},
+    {"label": "Mission Control", "href": "https://board.jacknbauhs.com", "key": "board", "live": true},
+    {"label": "Film & Directing", "href": "/film/", "key": "film"},
+    {"label": "Sales & Strategy", "href": "/sales/", "key": "sales"},
+    {"label": "About", "href": "/about/", "key": "about"},
+    {"label": "Contact", "href": "/contact/", "key": "contact"}
+  ],
+  "fineprint": "Every number carries its source and its date. Nothing here is a recommendation to buy."
+}

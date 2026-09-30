@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block main %}
+<section class="page-hero" aria-labelledby="h">
+  <div class="wrap">
+    <p class="kicker">Film & Directing</p>
+    <h1 id="h">Seven projects, twenty-one films.</h1>
+    <p class="lede">Documentary, narrative, commercial series and VR, cut and directed between Chapman's Dodge College and Chicago. Everything plays here; the originals live on Vimeo.</p>
+  </div>
+</section>
+
+<section class="section" id="reel" aria-labelledby="reel-h">
+  <div class="wrap">
+    <div class="section-head"><div><p class="kicker">The reel</p><h2 id="reel-h">{{ film.reel.title }}</h2></div></div>
+    <div class="video-frame"><iframe src="https://player.vimeo.com/video/{{ film.reel.vimeo }}?h={{ film.reel.hash }}&title=0&byline=0&portrait=0&dnt=1" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="{{ film.reel.title }}"></iframe></div>
+    <p class="note">{{ film.reel.caption }}</p>
+  </div>
+</section>
+
+<section class="section" id="projects" aria-labelledby="projects-h">
+  <div class="wrap">
+    <div class="section-head"><div><p class="kicker">The work</p><h2 id="projects-h">Projects</h2></div></div>
+    <div class="film-grid">
+      {% for p in film.projects %}
+      <a class="film-card" href="{{ base }}/film/{{ p.slug }}/">
+        <div class="poster-frame">{% if p.has_poster %}<img src="{{ base }}/assets/img/{{ p.poster }}" alt="" loading="lazy">{% else %}<div class="poster-placeholder"></div>{% endif %}</div>
+        <p class="kicker">{{ p.kind }} · {{ p.year }}</p>
+        <h3>{{ p.title }}{% if p.subtitle and p.subtitle != p.kind %} <span class="sub">// {{ p.subtitle }}</span>{% endif %}</h3>
+        <p class="line">{{ p.line }}</p>
+        <p class="mono src">{{ p.videos|length }} film{{ 's' if p.videos|length != 1 }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}
